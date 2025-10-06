@@ -1,7 +1,8 @@
 import { renderChart, updateChart } from "./components/chartComponent.js";
 import { renderNews } from "./components/newsComponent.js";
 
-const apiBase = "https://YOUR_RENDER_BACKEND_URL"; // Replace with your deployed FastAPI URL
+const apiBase = "https://crypto-backend.onrender.com";
+
 
 let chartInstance = null;
 
@@ -23,3 +24,4 @@ document.getElementById("predictBtn").addEventListener("click", async () => {
   // Render news
   renderNews(data.news || []);
 });
+
